@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/findListFragment">
+
+    <fragment
+        android:id="@+id/findListFragment"
+        android:name="com.tuygun.shoppinglist.FindListFragment"
+        android:label="FindListFragment" >
+        <action
+            android:id="@+id/action_findListFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/findListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.tuygun.shoppinglist.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_addListItemFragment"
+            app:destination="@id/addListItemFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_findListFragment"
+            app:destination="@id/findListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addListItemFragment"
+        android:name="com.tuygun.shoppinglist.AddListItemFragment"
+        android:label="AddListItemFragment" >
+        <action
+            android:id="@+id/action_addListItemFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>

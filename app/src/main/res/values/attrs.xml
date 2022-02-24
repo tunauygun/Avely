@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primaryColor" format="reference"/>
+    <attr name="primaryColorDark" format="reference"/>
+    <attr name="primaryTextColor" format="reference"/>
+    <attr name="fillColor" format="reference"/>
+    <attr name="textOnFillColor" format="reference"/>
+    <attr name="mainBackgroundColor" format="reference"/>
+</resources>
